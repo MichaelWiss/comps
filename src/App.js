@@ -1,7 +1,8 @@
 import Button from "./Button";
 
 function App() {
-    return <div>
+    return (
+     <div>
         <div>
             <Button></Button>
         </div>
@@ -14,7 +15,8 @@ function App() {
         <div>
             <Button></Button>
         </div>
-    </div>;
+    </div>
+    );
 }
 
 export default App;
