@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function Button ({ 
+
+function Button({ 
     children,
     primary,
     secondary,
@@ -9,21 +9,22 @@ function Button ({
     warning,
     danger,
     outline,
-    rounded
+    rounded,
 }) {
-    return <button>{children}</button>;
+    return <button className="bg-red-500">{children}</button>;
 }
 
 Button.propTypes = {
     checkVariationValue: ({ primary, secondary, success, warning, danger}) => {
-        const count = Number(!!primary)
+        const count = 
+          Number(!!primary)
         + Number(!!secondary)
         + Number(!!warning)
         + Number(!!success)
-        + Number(!!danger)
+        + Number(!!danger);
 
         if (count > 1) {
-            return new Error('Only one of primary, secondary, warning, success, danger can be true')
+            return new Error('Only one of primary, secondary, warning, success, danger can be true');
         }
     },
 };
