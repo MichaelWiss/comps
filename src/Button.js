@@ -1,6 +1,8 @@
 import React from 'react';
 
 
+
+
 function Button({ 
     children,
     primary,
@@ -11,11 +13,11 @@ function Button({
     outline,
     rounded,
 }) {
-    return <button className="bg-red-500">{children}</button>;
+    return <button className="bg-blue-500">{children}</button>;
 }
 
 Button.propTypes = {
-    checkVariationValue: ({ primary, secondary, success, warning, danger}) => {
+    checkVariationValue: ({ primary, secondary, success, warning, danger }) => {
         const count = 
           Number(!!primary)
         + Number(!!secondary)
