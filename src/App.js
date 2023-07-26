@@ -16,6 +16,9 @@ function App() {
         <div>
             <Button secondary outline>Subscribe</Button>
         </div>
+        <div>
+            <Button primary rounded>Something</Button>
+        </div>
     </div>
     );
 }
