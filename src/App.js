@@ -8,7 +8,7 @@ function App() {
         <div>
             <Button secondary outline rounded>
                 <GoBell />
-                 Click Me!
+                Click Me!
             </Button>
         </div>
         <div>
