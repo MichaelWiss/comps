@@ -592,11 +592,6 @@ video {
   align-items: center;
 }
 
-.gap-x-3 {
-  -webkit-column-gap: 0.75rem;
-          column-gap: 0.75rem;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -664,14 +659,14 @@ video {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-1\.5 {
@@ -711,5 +706,9 @@ video {
 
 .outline {
   outline-style: solid;
+}
+
+button > svg {
+  margin-right: 5px;
 }
 
