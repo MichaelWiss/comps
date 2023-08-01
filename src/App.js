@@ -7,14 +7,12 @@ function App() {
      <div>
         <div>
             <Button secondary outline rounded>
-                <GoBell />
-                Click Me!
+                <GoBell />Click Me!
             </Button>
         </div>
         <div>
             <Button danger outline>
-                <GoDownload />
-                 Buy Now
+                <GoDownload />Buy Now
             </Button>
         </div>
         <div>
