@@ -1,4 +1,4 @@
-import Accordian from './components/Accordian';
+import Accordion from './components/Accordion';
 
 function App() {
     const items = [
@@ -16,7 +16,7 @@ function App() {
         },
     ];
    
-  return <Accordian />
+  return <Accordion />
 }
 
-export default App;
+export default Accordion;
