@@ -8,12 +8,12 @@ function App() {
       content: 'You can use React on any project you want You can use React on any project you want You can use React on any project you want'
   },
   { 
-      id: '08houb',
+      id: '08h6498',
       label: 'Can I use React on a project',
       content: 'You can use React on any project you want You can use React on any project you want You can use React on any project you want',
   },
   { 
-      id: '0dnjnkih',
+      id: '0dn1jn09u8',
       label: 'Can I use React on a project',
       content: 'You can use React on any project you want You can use React on any project you want You can use React on any project you want',
       
