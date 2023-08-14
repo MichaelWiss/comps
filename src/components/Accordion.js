@@ -10,6 +10,10 @@ function Accordion({ items }) {
     const renderedItems = items.map((item, index) => {
         const isExpanded = index === expandedIndex;
 
+        const icon = <span>
+            {isExpanded ? 'DOWN' : "LEFT"}
+        </span>
+
         
 
         return (
