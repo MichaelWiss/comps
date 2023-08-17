@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { GoChevronDown, GoChevronLeft } from "react-icons/go";
 
 function Accordion({ items }) {
     const [expandedIndex, setExpandedIndex] = useState(0);
@@ -11,7 +12,7 @@ function Accordion({ items }) {
         const isExpanded = index === expandedIndex;
 
         const icon = <span>
-            {isExpanded ? 'DOWN' : "LEFT"}
+            {isExpanded ? <GoChevronDown /> : <GoChevronLeft />}
         </span>
 
         
@@ -19,7 +20,9 @@ function Accordion({ items }) {
         return (
             <div key={item.id}>
                 <div
-                    onClick={() => handleClick(index)}>{item.label}</div>
+                    onClick={() => handleClick(index)}>
+                        {icon}
+                        {item.label}</div>
                 {isExpanded && <div>{item.content}</div>}
             </div>
         )
