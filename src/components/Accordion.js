@@ -19,15 +19,15 @@ function Accordion({ items }) {
 
         return (
             <div key={item.id}>
-                <div
+                <div className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer"
                     onClick={() => handleClick(index)}>
-                        {icon}
-                        {item.label}</div>
-                {isExpanded && <div>{item.content}</div>}
+                        {item.label}
+                        {icon}</div>
+                {isExpanded && <div className="border-b p-5">{item.content}</div>}
             </div>
         )
     });
-    return <div>
+    return <div className='border-x border-t rounded'>
         {renderedItems}
     </div>;
 }
