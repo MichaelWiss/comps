@@ -11,7 +11,7 @@ function Dropdown({ options, selection, onSelect }) {
         // CLOSE DROPDOWN
         setIsOpen(false);
         // WHAT OPTION DID THE USER CLICK ON?
-        onSelect(option);
+        onChange(option);
     };
 
     const renderedOptions = options.map((option) => {
@@ -25,7 +25,7 @@ function Dropdown({ options, selection, onSelect }) {
     
 
     return <div>
-        <div onClick={handleClick}>{selection?.label || 'Select...'}</div>
+        <div onClick={handleClick}>{value?.label || 'Select...'}</div>
         {isOpen && <div>{renderedOptions}</div>}
     </div>;
 }
