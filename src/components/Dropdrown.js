@@ -50,7 +50,7 @@ function Dropdown({ options, value, onChange }) {
                 </Panel>
         {isOpen && <Panel className="absolute top-full">{renderedOptions}</Panel>}
     </div>
-    );
+    )
 }
 
 export default Dropdown;
