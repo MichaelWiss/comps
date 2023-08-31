@@ -10,7 +10,7 @@ function Dropdown({ options, value, onChange }) {
 
     useEffect(() => {
         const handler = (event) => {
-            console.log(event.target);
+            console.log(divEl.current);
         };
         document.addEventListener('click', handler, true);
 
