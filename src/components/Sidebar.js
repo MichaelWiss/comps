@@ -11,3 +11,11 @@ function Sidebar() {
         return <Link key={link.label} to={link.path}>{link.label}</Link>
 });
 
+return (
+    <div className="">
+        {renderedLinks}
+    </div>
+ );
+}
+
+export default Sidebar;
