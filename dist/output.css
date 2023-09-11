@@ -557,8 +557,17 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .top-full {
   top: 100%;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .mb-5 {
@@ -581,12 +590,20 @@ video {
   cursor: pointer;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded {
