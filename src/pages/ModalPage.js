@@ -11,8 +11,8 @@ function ModalPage() {
 
      return (
         <div>
-            <Button primay>Open Model</Button>
-            <Modal />
+            <Button onClick={handleClick} primary>Open Model</Button>
+            {showModal && <Modal />}
         </div>
      )
 }
