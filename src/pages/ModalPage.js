@@ -28,6 +28,10 @@ function ModalPage() {
 
      return (
         <div>
+            <Button onClick={handleClick} primary>
+    Open Model
+</Button>
+    {showModal && modal}
            
             
             <p>I'm baby taxidermy cloud bread small batch roof party tote bag woke mixtape sriracha vibecession. Flannel selvage chambray street art godard. Copper mug viral grailed, VHS 8-bit typewriter beard skateboard paleo knausgaard. Distillery skateboard jianbing vape whatever mustache coloring book everyday carry iPhone farm-to-table hammock. Sustainable sus tilde shabby chic, marxism tbh poutine hexagon gluten-free JOMO man bun.
@@ -133,10 +137,7 @@ Cardigan mumblecore photo booth iceland. Vegan post-ironic bicycle rights you pr
 
 Bicycle rights taiyaki cray portland, jawn meh narwhal. Chia craft beer single-origin coffee, cardigan hexagon blog raw denim semiotics af ethical. Yes plz tattooed shoreditch, palo santo tote bag letterpress YOLO chia celiac single-origin coffee. Godard selfies bruh, tattooed microdosing ethical roof party meditation artisan flannel tbh farm-to-table. 8-bit ethical art party, knausgaard chambray swag jean shorts coloring book grailed readymade forage tofu sriracha. Marfa quinoa shaman green juice vegan bicycle rights neutral milk hotel actually tousled gochujang next level jianbing pour-over PBR&B.</p>
 
-<Button onClick={handleClick} primary>
-    Open Model
-</Button>
-    {showModal && modal}
+
         </div>
      )
 }
