@@ -12,13 +12,13 @@ function TablePage() {
         { label: 'Name' },
         { label: 'Color' },
         { label: 'Score' },
-    ]
+    ];
 
 
 
     return (
         <div>
-            <Table data={data} />
+            <Table data={data} config={config} />
         </div>
     );
 }
