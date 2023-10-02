@@ -9,7 +9,7 @@ function TablePage() {
     ];
 
     const config = [
-        { label: 'Name' },
+        { label: 'Name of Fruit' },
         { label: 'Color' },
         { label: 'Score' },
     ];
