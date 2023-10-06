@@ -4,11 +4,12 @@ function Table({ data, config }) {
     });
 
     const renderedRows = data.map((fruit) => {
-        return (
+        const renderedCells = config.map((column) => {
+            return <td key={column.label}>{column.render(fruit)}</td>
+        });
+    return (
             <tr className="border-b" key={fruit.name}>
-                const renderedCells = config.map((column) => {
-
-                })
+                {renderedCells}
             </tr>
         );
     });
