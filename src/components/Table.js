@@ -6,11 +6,9 @@ function Table({ data, config }) {
     const renderedRows = data.map((fruit) => {
         return (
             <tr className="border-b" key={fruit.name}>
-                <td className="p-3">{config[0].render(fruit)}</td>
-                <td className="p-3">
-                    {config[1].render(fruit)}
-                </td>
-                <td className="p-3">{config[2].render(fruit)}</td>
+                const renderedCells = config.map((column) => {
+
+                })
             </tr>
         );
     });
