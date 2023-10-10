@@ -1,3 +1,9 @@
+function Echo({ children }) {
+    return children;
+}
+
+
+
 function Table({ data, config, keyFn }) {
     const renderedHeaders = config.map((column) => {
         if (column.header) {
