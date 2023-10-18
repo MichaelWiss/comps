@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { GoArrowSmallDown, GoArrowSmallUp } from 'react-icons/go';
 import Table from './Table';
 
 function SortableTable(props) {
