@@ -1,10 +1,12 @@
 
+import { useState } from 'react';
 import Button from '../components/Button';
-import useNumber from '../hooks/use-number';
+
 
 
 function CounterPage({ initialCount }) {
-    const { count, increment } = useNumber(initialCount);
+    const [count, setCount] = useState();
+    
 
     return (
     <div>
