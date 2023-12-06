@@ -12,8 +12,12 @@ const reducer = (state, action) => {
         };
     }
 
-    if (action.type === '')
-    
+    if (action.type === 'change-value-to-add'){
+        return {
+            ...state,
+            valueToAdd: action.payload,
+        };
+    }
     return state;
 };
 
