@@ -11,6 +11,9 @@ const reducer = (state, action) => {
             count: state.count + 1
         };
     }
+
+    if (action.type === '')
+    
     return state;
 };
 
@@ -38,7 +41,10 @@ function CounterPage({ initialCount }) {
     const handleChange = (event) => {
         const value = parseInt(event.target.value) || 0;
 
-        // setValueToAdd(value);
+        dispatch({
+            type: 'change-value-to-add',
+            payload: value
+        });
     };
     const handleSubmit = (event) => {
         event.preventDefault();
