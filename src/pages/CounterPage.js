@@ -18,6 +18,7 @@ const reducer = (state, action) => {
             valueToAdd: action.payload,
         };
     }
+
     return state;
 };
 
@@ -29,8 +30,9 @@ function CounterPage({ initialCount }) {
     // const [valueToAdd, setValueToAdd] = useState(0);
     const [state, dispatch] = useReducer(reducer, {
         count: initialCount,
-        valueToAdd: 0
-    })
+        valueToAdd: 0,
+    });
+    console.log(state);
     
     const increment = () => {
         dispatch({
