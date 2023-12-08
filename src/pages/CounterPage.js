@@ -50,13 +50,13 @@ function CounterPage({ initialCount }) {
 
     const increment = () => {
         dispatch({
-            type: 'INCREMENT_COUNT',
+            type: INCREMENT_COUNT,
         });
     };
 
     const decrement = () => {
         dispatch({
-            type: 'DECREMENT_COUNT',
+            type: DECREMENT_COUNT,
         });
     };
 
@@ -64,7 +64,7 @@ function CounterPage({ initialCount }) {
         const value = parseInt(event.target.value) || 0;
 
         dispatch({
-            type: 'SET_VALUE_TO_ADD',
+            type: SET_VALUE_TO_ADD,
             payload: value
         });
     };
